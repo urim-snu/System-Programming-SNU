@@ -1,0 +1,5 @@
+mm_test
+*.o
+*.d
+doc/html
+*.swp

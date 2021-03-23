@@ -1,0 +1,36 @@
+#
+# Demo
+#
+
+dataseg 0x2000000
+heap firstfit
+
+mode correctness
+
+log ds 1
+log mm 2
+
+start
+m 1 16
+m 2 50
+m 3 47
+m 4 48
+m 5 32
+m 6 1000
+m 7 10000
+f 2
+f 5
+m 5 40
+m 2 40
+f 6
+v
+f 1
+v
+f 2
+f 3
+f 5
+f 7
+v
+stop
+stat
+
